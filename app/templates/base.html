@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - HDB-Predictor</title>
+      {% else %}
+      <title>Welcome to HDB-Predictor</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>HDB-Predictor: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+# Extends inheritance
+
+{% block content %}
+
+    <h1>Hi, {{ user.username }}!</h1>
+    {% for house in houses %}
+        <div>
+            <p> House {{ loop.index }}: 
+            Location : {{house.location}}
+            Floor Area :{{ house.floor_area }}
+            <b>Price : {{ house.price }}</b></p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
